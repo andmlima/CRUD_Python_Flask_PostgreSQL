@@ -1,6 +1,4 @@
-![simplinnovation](https://4.bp.blogspot.com/-f7YxPyqHAzY/WJ6VnkvE0SI/AAAAAAAADTQ/0tDQPTrVrtMAFT-q-1-3ktUQT5Il9FGdQCLcB/s350/simpLINnovation1a.png)
-
-# Basic CRUD: Flask & PostgreSQL
+# CRUD: Python, Flask & PostgreSQL
 
 1. Activate __PostgreSQL__ server:
     
@@ -61,7 +59,11 @@
     __Post a data to database:__ 
     ```bash
     POST /data
-    body request: {name:"x", age:"y"}
+    {
+    "name": "Name",
+    "age": "age"
+    }
+    
     ```
     __Get all data & specific data by id:__
     ```bash
@@ -71,30 +73,18 @@
     __Update a data by id__:
     ```bash
     PUT /data/{:id}
-    body request: {name:"x", age:"y"}
+    body request: 
+    {
+    "name": "Name",
+    "age": "age"
+    }
     ```
     __Delete a data by id:__
     ```bash
     DELETE /data/{:id}
     ```
 
-#
-
-7. Enjoy your code! 😎👌
-
-## See also:
+## CRUD:
 
 - [Basic CRUD: Flask & MySQL](https://github.com/LintangWisesa/CRUD_Flask_MySQL)
-- [Basic CRUD: Flask & PostgreSQL](https://github.com/LintangWisesa/CRUD_Flask_PostgreSQL)
 - [Basic CRUD: Flask & MongoDB](https://github.com/LintangWisesa/CRUD_Flask_MongoDB)
-
-#
-
-#### Lintang Wisesa :love_letter: _lintangwisesa@ymail.com_
-
-[Facebook](https://www.facebook.com/lintangbagus) | 
-[Twitter](https://twitter.com/Lintang_Wisesa) |
-[Google+](https://plus.google.com/u/0/+LintangWisesa1) |
-[Youtube](https://www.youtube.com/user/lintangbagus) | 
-:octocat: [GitHub](https://github.com/LintangWisesa) |
-[Hackster](https://www.hackster.io/lintangwisesa)
